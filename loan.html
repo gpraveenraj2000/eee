@@ -1,0 +1,111 @@
+
+<html>
+<head>
+<title>loantypes</title>
+
+
+
+<script language="javascript">
+function calculate()
+{
+var r=document.loan.bk.value;
+/*switch(document.loan.bk.value)
+{
+
+case b1:
+r=5;break;
+case b2:
+r=7;break;
+case b3:
+r=8;break;
+case b4:
+r=7;break;
+case b5:
+r=2;break;
+
+
+}*/
+
+
+var p=document.loan.amt.value;
+var n=document.loan.mon.value;
+
+var i=r/100;
+var a=p*(1+i)^n;
+var e=a/n;
+document.loan.tot.value=a;
+document.loan.em.value=e;
+
+}
+
+</script>
+<link type="text/css" rel="stylesheet" href="C:\eee\style.css">
+</head>
+<body>											
+<div class="tit">
+   <div id="tex" class="tit"><h1>ADVISORS</h1></div>
+   <div id="form" class="tit">Login<br />
+    &nbsp&nbspEmail-Id<br>
+    &nbsp&nbsp<input type="text" name="id" size="20" maxsize="25"/><br />
+    &nbsp&nbsp<input type="checkbox" />Keep me login 
+   </div>
+   <div id="form2" class="tit"><br/>Password<br />
+<input type="password" name="id2" size="20" maxsize="25"/><br/>
+Forget Password
+   </div> 
+   <div id="form3" class="tit"><br/>
+<input type="button" name="id3" value="login" onclick="alert('login successfully')" /><br/>
+<input type="button" name="id3" value="signup" onclick="alert('signed in sucessfully')" /><br/>
+   </div> 
+   <div id="menu" class="tit">
+     <a href="C:\eee\home.html"> HOME </a>&nbsp&nbsp
+     <a href="C:\eee\advice.html">ADVICES</a>&nbsp&nbsp
+     <a href="C:\eee\aboutus.html">ABOUT US</a>&nbsp&nbsp
+     <a href="C:\eee\contact.html">CONTACT US</a>&nbsp&nbsp
+     <a href="C:\eee\help.html">HELP</a>&nbsp&nbsp
+   </div>
+</div>
+
+
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+<img src="C:\eee\loan.png" height=300px width=100%/>
+<div id="bodyx">
+
+<h3><b>Enter loans details</b></h3>
+<form name="loan" method="get" action="www.google.com">
+Select the bank&nbsp;<select name="bk">     
+
+<option value="11">SBI    </option>
+
+<option value="12">IOB   </option>
+<option value="13">INDIAN   </option>
+<option value="14">CANARA   </option>
+<option value="15">HDFC   </option>
+</select><br/>
+Select the loan  &nbsp<select name="ln">     
+
+<option value="L1">Vechile   </option>
+<option value="L2">Home   </option>
+<option value="L3">personnal   </option>
+<option value="L4">Jewel   </option>
+
+</select><br/>
+Enter the amount &nbsp<input type="text" size="10" maxlength="6" name="amt" /><br/>
+Duration         &nbsp<input type="text" size="10" maxlength="6" name="mon" /><br/>
+<input type ="button" value="calculate" name="cal" onclick="calculate()" /><br/>
+
+
+EMI&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="em"  /><br/>
+TOTAL&nbsp;&nbsp; 
+<input type="text" name="tot" /><br/>
+</form><hr>
+Welcome here we tell you about the loan you want<br/>
+Contact Our Agents-8910083871,731973717,7197931973.
+<hr>
+<marquee> FOR QUERIES CALL 9597848813</marquee>
+
+</div>
+</body>
+</html>

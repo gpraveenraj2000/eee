@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>tax </title>
+
+
+
+<script language="javascript">
+function calculate()
+{
+
+var r=document.loan.bk.value;
+var p=document.loan.amt.value;
+var i=r/100;
+var a=p*i;
+var c=p-a;
+document.loan.em.value=c;
+document.loan.tot.value=a;
+
+}
+
+</script>
+<link type="text/css" rel="stylesheet" href="C:\eee\style.css">
+</head>
+<body>											
+<div class="tit">
+   <div id="tex" class="tit"><h1>ADVISORS</h1></div>
+   <div id="form" class="tit">Login<br />
+    &nbsp&nbspEmail-Id<br>
+    &nbsp&nbsp<input type="text" name="id" size="20" maxsize="25"/><br />
+    &nbsp&nbsp<input type="checkbox" />Keep me login 
+   </div>
+   <div id="form2" class="tit"><br/>Password<br />
+<input type="password" name="id2" size="20" maxsize="25"/><br/>
+Forget Password
+   </div> 
+   <div id="form3" class="tit"><br/>
+<input type="button" name="id3" value="login" onclick="alert('login successfully')" /><br/>
+<input type="button" name="id3" value="signup" onclick="alert('signed in sucessfully')" /><br/>
+   </div> 
+   <div id="menu" class="tit">
+     <a href="C:\eee\home.html"> HOME </a>&nbsp&nbsp
+     <a href="C:\eee\advice.html">ADVICES</a>&nbsp&nbsp
+     <a href="C:\eee\aboutus.html">ABOUT US</a>&nbsp&nbsp
+     <a href="C:\eee\contact.html">CONTACT US</a>&nbsp&nbsp
+     <a href="C:\eee\help.html">HELP</a>&nbsp&nbsp
+   </div>
+</div>
+
+
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+<img src="C:\eee\tax.jpg" height=300px width=100%/>
+<div id="bodyx">
+
+<h3><b>Income Tax Details</b></h3><br/>
+<b>Welcome here we tell you about the tax you want</b><br/>
+<form name="loan" method="get" action="www.google.com">
+Select the gender&nbsp;<select name="bk">     
+
+<option value="15">male    </option>
+<option value="10">female   </option>
+
+</select><br/>
+
+
+Enter your salary(per annum)&nbsp<input type="text" size="10" maxlength="6" name="amt" /><br/>
+<input type ="button" value="calculate" name="cal" onclick="calculate()" /><br/>
+
+
+Tax amount&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="em"  /><br/>
+Tax u pay&nbsp&nbsp 
+<input type="text" name="tot" /><br/>
+</form>
+<hr>
+<MARQUEE>FOR AGENTS CONTACT 9597848813</MARQUEE>
+<hr>
+</div>
+</body>
+</html>
